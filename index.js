@@ -1,5 +1,5 @@
 if (performance.navigation.type===1){
-    //alert("I run");
+   
     const getRandomInt = function(max) {
         return Math.floor(Math.random() * max);
     };
@@ -20,10 +20,10 @@ if (performance.navigation.type===1){
     document.querySelector(".player2 img").setAttribute("src", images[playerTwoImageIndex]);
 
     if (playerOneImageIndex > playerTwoImageIndex) {
-        document.querySelector("h1").innerText = "Player One Won";
+        document.querySelector("h1").innerText = "🚩Player One Won";
     }else if (playerOneImageIndex < playerTwoImageIndex) {
-        document.querySelector("h1").innerText = "Player Two Won";
+        document.querySelector("h1").innerText = "Player Two Won 🚩";
     }else{
-        document.querySelector("h1").innerText = "It's a Tie";
+        document.querySelector("h1").innerText = "🚩 Draw 🚩";
     }
 }
